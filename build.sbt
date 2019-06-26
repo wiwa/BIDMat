@@ -1,10 +1,12 @@
 name := "BIDMat"
 
-version := "1.1.0"
+version := "1.1.0-win"
 
 organization := "edu.berkeley.bid"
 
-scalaVersion := "2.11.2"
+scalaVersion := "2.11.11"
+
+test in assembly := {}
 
 artifactName := { (sv: ScalaVersion, module: ModuleID, artifact: Artifact) =>
   "../../BIDMat.jar"

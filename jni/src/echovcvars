@@ -1,0 +1,8 @@
+query_vcvarsall() {
+  local envars=$*
+
+  echo "what"
+
+  (cd '/cygdrive/c/Program Files (x86)\Microsoft Visual Studio/2017/Community/VC/Auxiliary/Build/' &&
+   cmd /c "vcvarsall.bat amd64 && c:/cygwin/bin/bash -c 'printenv $envars'")
+}
